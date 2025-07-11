@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #eef2f3, #8e9eab);
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background: #1f2937;
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.1rem;
+  color: #cbd5e0;
+}
+
+section {
+  max-width: 1000px;
+  margin: 2rem auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+section h2 {
+  color: #1f2937;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+section h3 {
+  margin-top: 1.5rem;
+  color: #4b5563;
+}
+
+.screenshots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.screenshots img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+/* _1이 포함된 이미지 가로폭 더 키우기 */
+.screenshots img[src*="_1"] {
+  max-width: 500px;
+}
+
+.screenshots img:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  background: #f1f5f9;
+  margin-top: 3rem;
+  color: #666;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .screenshots {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .screenshots img[src*="_1"] {
+    max-width: 90vw;
+  }
+}
