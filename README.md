@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./banner-top.svg" width="100%"/>
+<img src="./img/banner-top.svg" width="100%"/>
 
 <p>
   <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"/>
@@ -114,6 +114,6 @@ class Developer {
 
 **📝 [velog.io/@petershin](https://velog.io/@petershin/posts)** &nbsp;|&nbsp; **🖥️ [Portfolio](https://ghghtls.github.io/petershin.github.io/)**
 
-<img src="./banner-bottom.svg" width="100%"/>
+<img src="./img/banner-bottom.svg" width="100%"/>
 
 </div>
