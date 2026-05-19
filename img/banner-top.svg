@@ -1,0 +1,55 @@
+<svg width="1280" height="200" viewBox="0 0 1280 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#0f0c29"/>
+      <stop offset="40%"  stop-color="#302b63"/>
+      <stop offset="100%" stop-color="#24243e"/>
+    </linearGradient>
+    <linearGradient id="title" x1="0" y1="0" x2="700" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#60a5fa"/>
+      <stop offset="50%"  stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <radialGradient id="spot1" cx="30%" cy="50%" r="40%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="spot2" cx="70%" cy="50%" r="40%">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="200" fill="url(#bg)"/>
+  <rect width="1280" height="200" fill="url(#spot1)"/>
+  <rect width="1280" height="200" fill="url(#spot2)"/>
+
+  <!-- Decorative lines -->
+  <line x1="0" y1="1" x2="1280" y2="1" stroke="#60a5fa" stroke-opacity="0.08" stroke-width="1"/>
+  <line x1="0" y1="199" x2="1280" y2="199" stroke="#a78bfa" stroke-opacity="0.08" stroke-width="1"/>
+
+  <!-- Name (gradient fill via rect + clip) -->
+  <defs>
+    <clipPath id="clip-title">
+      <text x="640" y="102" font-family="'Arial Black', 'Helvetica Neue', Arial, sans-serif"
+            font-size="58" font-weight="900" text-anchor="middle" letter-spacing="-1">Seongjae Shin</text>
+    </clipPath>
+  </defs>
+  <rect x="200" y="50" width="880" height="70" fill="url(#title)" clip-path="url(#clip-title)" filter="url(#glow)"/>
+
+  <!-- Subtitle -->
+  <text x="640" y="148"
+        font-family="'Courier New', 'Lucida Console', monospace"
+        font-size="17" text-anchor="middle" fill="#94a3b8" letter-spacing="5">
+    Java  ·  Spring Boot  ·  Flutter  ·  Firebase
+  </text>
+
+  <!-- Wave bottom -->
+  <path d="M0,172 C213,155 426,190 640,168 C853,146 1066,185 1280,168 L1280,200 L0,200 Z" fill="#0d1117" opacity="0.7"/>
+  <path d="M0,182 C320,165 640,198 960,175 C1080,168 1180,182 1280,178 L1280,200 L0,200 Z" fill="#0d1117"/>
+</svg>
